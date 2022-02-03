@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidyatak | Home</title>
+    
+    <link rel="stylesheet" href="static/style/main.css">
+    <link rel="stylesheet" href="static/style/index.css">
+    <link rel="stylesheet" href="static/style/mainResponsive.css">
+    <link rel="stylesheet" href="static/style/indexResponsive.css">
+
+</head>
+<body>
+    <header>
+        <div class="user-icon" id="nav-user" onclick="openSideNav()"><svg id="user-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="28" height="28"><path id="primary" d="M16,7a4,4,0,1,1-4-4A4,4,0,0,1,16,7Zm0,8H8a4,4,0,0,0-4,4H4a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2h0A4,4,0,0,0,16,15Z" style="fill: #FFF; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg></div>
+        <nav>
+            <a href="#" class="menu-link"><p>home</p><span class="menu-link--dash"></span></a>
+            <a href="#" class="menu-link"><p>shop</p><span class="menu-link--dash"></span></a>
+            <a href="#" class="menu-link"><p>news</p><span class="menu-link--dash"></span></a>
+        </nav>
+        <a href="#" class="header-logo"></a>
+    </header>
+
+    <div class="side-nav" id="side-nav">
+        <div class="side-nav-menu">
+            <a href="#" class="side-nav-menu--link" id="home">Home</a>
+            <a href="#" class="side-nav-menu--link" id="dashboard">your dashboard</a>
+            <a href="#" class="side-nav-menu--link" id="ask">ask a question</a>
+        </div>
+        <div class="side-nav-menu">
+            <p class="side-nav-menu--title">shop</p>
+            <a href="#" class="side-nav-menu--link" id="books">books</a>
+            <a href="#" class="side-nav-menu--link" id="notes">notes</a>
+            <a href="#" class="side-nav-menu--link" id="stationery items">stationery items</a>
+        </div>
+        <div class="side-nav-menu">
+            <p class="side-nav-menu--title">news</p>
+            <a href="#" class="side-nav-menu--link" id="books">recent news</a>
+            <a href="#" class="side-nav-menu--link" id="notes">scholarships</a>
+            <a href="#" class="side-nav-menu--link" id="stationery items">miscellaneous</a>
+        </div>
+        <div class="side-nav-menu">
+            <p class="side-nav-menu--title">vidyatak</p>
+            <a href="#" class="side-nav-menu--link" id="about">about</a>
+            <a href="#" class="side-nav-menu--link" id="terms-conditions">terms & conditions</a>
+            <a href="#" class="side-nav-menu--link" id="privacy-policy">privacy policy</a>
+            <a href="#" class="side-nav-menu--link" id="refund-policy">refund policy</a>
+            <a href="#" class="side-nav-menu--link" id="return-policy">return policy</a>
+            <a href="#" class="side-nav-menu--link" id="contact-us">contact us</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="container">
+            <div class="hero-logo"></div>
+            <div class="hero-search">
+                <form action="#" class="hero-search--form">
+                    <input type="text" name="query" id="hero-query" placeholder="Search questions, answers, books and people...">
+                    <button type="submit" id="hero-query--submit"><p>SEARCH</p></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="empty-space"></div>
+
+    <h3 class="title-small">Browse topics of your interests</h3>
+    <div class="categories">
+        <div class="horizontal-wrapper" id="categories-wrapper">
+
+            <div class="category-card">
+                <img src="https://source.unsplash.com/random/250*150" class="category-img">
+                <a href="#" class="category-title">
+                    <p>Science</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="empty-space"></div>
+
+    <div class="index-container">
+
+        <div class="index-left">
+            <div class="vertical-wrapper">
+                <h3 class="title-small">Feed Label</h3>
+                <div class="question-card">
+                    <div class="question-details">
+                        <img src="static/images/girl.jpg" class="questioner-img">
+                        <a href="#" class="question-tag">question tag</a>
+                    </div>
+                    <h2 class="question">What's your question?</h2>
+                    <p class="question-desc">Additional question details given by the questioner will appear here.</p>
+                    <div class="question-interaction">
+                        <div class="write-answer"><svg id="edit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="24" height="24"><path id="write-answer--icon" d="M19.88,7,11,15.83,7,17l1.17-4,8.88-8.88A2.09,2.09,0,0,1,20,4,2.09,2.09,0,0,1,19.88,7ZM21,21H3" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>&nbsp;<p id="answers-count">0</p></div>
+                        <div class="other-interaction-btns">
+                            <div class="delete"><img src="static/images/deleteicon.png" alt="Delete" id="delete-icon"></div>
+                            <div class="bookmark"><svg id="bookmark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="24" height="24"><path id="bookmark-icon" d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="index-right">
+            
+        </div>
+    </div>
+
+    <div id="chat-section">
+        <div class="chat-div" >
+            <img src="static/images/chatwrapper.jpg" class="chat-div--img">
+            <div class="chat-user-div">
+                <img src="static/images/girlsquare.jpg" class="chat-user-img"></img>
+                <div class="chat-user-info">
+                    <h3 class="chat-user-name" id="chat-user-name">Ananya Pandey</h3>
+                    <p class="chat-user-category" id="chat-user-category">Struggler</p>
+                </div>
+                <div class="chat-user-badge"><svg id="gold-medal" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="24" height="24"><path id="primary" d="M12,3A6,6,0,1,1,6,9,6,6,0,0,1,12,3Zm-.62,5.4L10,8.59l1,.89-.24,1.27,1.24-.6,1.24.6L13,9.48l1-.89L12.62,8.4,12,7.25Zm4.9,4.8A6,6,0,0,1,13,14.92L15,20l1.5-1.25,2.09.21ZM5.41,19l2.09-.21L9,20l2-5.08A6,6,0,0,1,7.72,13.2Z" style="fill: gold; stroke: #FFF; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;"></path></svg></div>
+            </div>
+            <div class="chat-filter-div">
+                <h4 class="chat-filter">chats</h4>
+                <h4 class="chat-filter">requests</h4>
+                <h4 class="chat-filter">archived</h4>
+            </div>
+            <br>
+            <div class="chat-wrapper">
+
+                <div class="chat-contact-div">
+                    <img src="static/images/girlsquare.jpg" class="chat-contact-img">
+                    <div class="chat-contact-info">
+                        <h2 class="chat-contact-name">Contact Name</h2>
+                        <p class="chat-contact--lastmsg">Last message will be shown here...</p>
+                    </div>
+                    <p class="lastmsg-time">11:39</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="ask-question-cta"><svg width="64" height="64" version="1.1" viewBox="0 0 6.35 6.35" xmlns="http://www.w3.org/2000/svg"><circle id="ask-circle" cx="3.21" cy="3.21" r="2.55"/><path id="ask-plus" transform="scale(.265)" d="m11.9 6.98c-0.211 0-0.381 0.17-0.381 0.381v4.13h-4.13c-0.211 0-0.381 0.17-0.381 0.381v0.504c0 0.211 0.17 0.381 0.381 0.381h4.13v4.13c0 0.211 0.17 0.381 0.381 0.381h0.504c0.211 0 0.381-0.17 0.381-0.381v-4.13h4.13c0.211 0 0.381-0.17 0.381-0.381v-0.504c0-0.211-0.17-0.381-0.381-0.381h-4.13v-4.13c0-0.211-0.17-0.381-0.381-0.381h-0.504z" style="fill:#fff"/></svg></div>
+    <div class="toggle-chat-btn" onclick="openchatSection()"><svg id="chat-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="32" height="32"><path id="chat-svg--stroke" d="M18.81,16.23,20,21l-4.95-2.48A9.84,9.84,0,0,1,12,19c-5,0-9-3.58-9-8s4-8,9-8,9,3.58,9,8A7.49,7.49,0,0,1,18.81,16.23Z" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><line id="chat-svg--stroke" x1="11.95" y1="11" x2="12.05" y2="11" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></line><line id="chat-svg--stroke" data-name="primary-upstroke" x1="7.9" y1="11" x2="8" y2="11" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></line><line id="chat-svg--stroke" data-name="primary-upstroke" x1="16" y1="11" x2="16.1" y2="11" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></line></svg></div>
+
+    <script src="static/js/main.js"></script>
+</body>
+</html>
