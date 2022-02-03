@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+
+    .vertical-wrapper{
+        height: 150%;
+    }
+    .empty-space{
+        display: none;
+    }
+    .title-small{
+        margin-bottom: .25rem;
+        font-size: .9rem;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .user-icon{
+        left: 1rem;
+    }
+
+    .side-nav{
+        width: 60vw;
+        left: -64vw;
+    }
+}
